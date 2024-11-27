@@ -29,13 +29,14 @@ Avant d'exécuter le script, assurez-vous que votre environnement répond aux ex
 
 Installation
 
-    Clonez le dépôt :
+Clonez le dépôt :
+
     git clone https://github.com/CineCine86/Debian_Backup_WebServ.git
     cd Debian_Backup_WebServ
 
 Assurez-vous que le script est exécutable :
 
-chmod +x install.sh
+    chmod +x install.sh
 
 Lancez le script d'installation :
 
@@ -55,39 +56,44 @@ Utilisation
 
 Structure du Projet
 
-.
+
 ├── install.sh           # Script principal d'installation
+
 ├── serv_backup.sh       # Script de sauvegarde
+
 ├── backup_config.conf   # Fichier de configuration FTP
+
 ├── .my.cnf              # Fichier de configuration MySQL
+
 └── README.md            # Documentation du projet
 
 Exemple d'utilisation
 
 Voici un exemple de fichier backup_config.conf généré par le script :
 
-ftp_user="my_ftp_user"
-ftp_password="my_secure_password"
-ftp_server="192.168.1.31"
-ftp_port="990"
+    ftp_user="my_ftp_user"
+    ftp_password="my_secure_password"
+    ftp_server="192.168.1.31"
+    ftp_port="990"
 
 Et un exemple de fichier .my.cnf pour MySQL :
 
-[client]
-user=my_user
-password=my_secure_password
+    [client]
+    user=my_user
+    password=my_secure_password
 
 Une fois ces fichiers configurés, le script de sauvegarde peut être exécuté pour transférer vos bases de données et fichiers via FTP.
+
 Contribuer
 
 Les contributions sont les bienvenues ! Pour contribuer :
 
-    Forkez le dépôt.
+Forkez le dépôt.
     Créez une branche pour vos modifications :
 
     git checkout -b feature/ma-fonctionnalite
 
-    Testez vos modifications et envoyez une pull request.
+Testez vos modifications et envoyez une pull request.
 
 Licence
 
