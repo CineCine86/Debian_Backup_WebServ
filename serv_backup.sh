@@ -10,7 +10,7 @@ echo $ftp_port
 # Définition des variables
 current_date=$(date +"%Y-%m-%d_%H-%M-%S")
 local_folder="/var/www/"
-EMAIL_TO="ssi@renovecobfc.fr"
+EMAIL_TO=""
 
 # Fonction pour envoyer une notification par e-mail en cas d'échec
 send_error_email() {
