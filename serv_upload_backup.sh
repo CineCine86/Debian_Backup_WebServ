@@ -90,10 +90,10 @@ set ssl:verify-certificate no;
 set ftp:passive-mode true;
 set ftp:ssl-allow true;
 set ftp:ssl-protect-list yes;
-cd SAUVEGARDE/PROD/FULL;
+cd SAUVEGARDE/PROD/UPLOADS;
 mkdir -p $CURRENT_DATE;
 cd $CURRENT_DATE;
-mirror -R $local_folder ./local_folder
+mirror -R $local_upload_folder ./local_upload_folder
 mirror -R $TEMP_DIR ./databases;
 bye
 " >> "$LOG_FILE" 2>&1
